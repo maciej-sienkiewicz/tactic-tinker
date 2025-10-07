@@ -8,42 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 215 28% 12%;
+    --background: 220 25% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 215 25% 16%;
+    --card: 220 22% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 215 25% 16%;
+    --popover: 220 22% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 210 100% 55%;
+    --primary: 142 76% 36%;
     --primary-foreground: 0 0% 100%;
+    --primary-glow: 142 76% 46%;
 
-    --secondary: 25 95% 53%;
+    --secondary: 210 90% 48%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 20% 20%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 210 100% 55%;
+    --accent: 142 76% 36%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 215 20% 25%;
-    --input: 215 20% 25%;
-    --ring: 210 100% 55%;
+    --border: 220 20% 20%;
+    --input: 220 20% 18%;
+    --ring: 142 76% 36%;
 
     --radius: 0.75rem;
 
-    --pitch-dark: 110 45% 20%;
-    --pitch-light: 110 45% 28%;
+    --pitch-dark: 110 50% 18%;
+    --pitch-light: 110 50% 24%;
     --pitch-line: 0 0% 95%;
     
     --player-slot: 0 0% 100%;
-    --player-slot-ring: 210 100% 55%;
+    --player-slot-ring: 142 76% 36%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
+    --gradient-card: linear-gradient(145deg, hsl(220 22% 14%), hsl(220 22% 10%));
+    --shadow-glow: 0 0 40px hsl(142 76% 36% / 0.3);
   }
 }
 

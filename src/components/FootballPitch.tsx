@@ -6,9 +6,10 @@ interface FootballPitchProps {
   positions: PositionCoords[];
   assignedPlayers: (Player | null)[];
   onDropPlayer: (positionIndex: number, player: Player) => void;
+  onPlayerClick: (player: Player) => void;
 }
 
-export const FootballPitch = ({ positions, assignedPlayers, onDropPlayer }: FootballPitchProps) => {
+export const FootballPitch = ({ positions, assignedPlayers, onDropPlayer, onPlayerClick }: FootballPitchProps) => {
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
   };
@@ -58,7 +59,10 @@ export const FootballPitch = ({ positions, assignedPlayers, onDropPlayer }: Foot
           onDragOver={handleDragOver}
           onDrop={(e) => handleDrop(e, index)}
         >
-          <PlayerSlot player={assignedPlayers[index]} />
+          <PlayerSlot 
+            player={assignedPlayers[index]} 
+            onClick={() => assignedPlayers[index] && onPlayerClick(assignedPlayers[index]!)}
+          />
         </div>
       ))}
     </div>
